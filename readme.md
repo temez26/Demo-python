@@ -1,5 +1,5 @@
 # Teemu Kalmari Taso 3
-# opiskelija numero:2200675
+
 # Luokat
 Tieto = auttaa lisäämään käyttäjän nimet kayttaja pöytään perinnän avulla
 Kayttaja = sisältää funktiot kayttaja pöydän luomiselle ja muokkaamiselle

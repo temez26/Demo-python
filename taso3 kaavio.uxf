@@ -1,0 +1,75 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>220</x><y>230</y><w>210</w><h>190</h></coordinates><panel_attributes>Kayttaja
+--
++nimi,tiimi,rooli,salasana: string
+ 
+--
++taulu()
++haeKanta()
++salasana()
++linkita()
++etsiTiimi()
++vaihdaTiimi()
++poista()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>Tavara
+--
++nimike:string
++arvo:integer
+--
++tavarat()
++tavaraLIsta()
++tavaraTaytto()
++haeTavarat()
++poistaTavarat()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>240</y><w>210</w><h>190</h></coordinates><panel_attributes>kayttajanTavara
+--
++kayttaja,tavara:string
+--
++kayttajaTavara()
++lisaaTavara()
++naytaKayttajanTavara()
++poistaKayttajanTavara()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>570</y><w>210</w><h>180</h></coordinates><panel_attributes>Otsikko
+--
++__init__
++palauta()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>590</y><w>210</w><h>190</h></coordinates><panel_attributes>Otsikko1
+--
++__init__()
++palauta()
+
+Polymorfismi</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>580</y><w>210</w><h>200</h></coordinates><panel_attributes>siirto
+--
++__init__()
++siirra()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>550</y><w>210</w><h>190</h></coordinates><panel_attributes>Valikko(kayttajanTavara,Tavara,Kayttaja,Otsikko)
+--
++valinta:integer
+--
++valikko()
++valikko2()
++valikko3()
++valikko4()
+--
+Responsibilities
+Yhdistää pöytä luokat valikkoihin
+moniperintä</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>860</y><w>210</w><h>190</h></coordinates><panel_attributes>Main(Valikko,Otsikko1)
+--
++valinta:integer
+--
+haetaan funktioita muista luokista
+--
+Responsibilities
+moniperintä
+Ajaa koko ohjelman </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Tieto
+--
++kayttaja,tiimi,rooli:string
+--
++__init__()
+--
+Responsibilities
+Toimii datan yhdistäjänä kun haetaan dataa Kayttaja luokasta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>530</y><w>100</w><h>30</h></coordinates><panel_attributes>/AbstractClass/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>420</y><w>120</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;130</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>420</y><w>140</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>400</y><w>350</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>330;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>390</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>380</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>360</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>350</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>180</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>180</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>740</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>730</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;120;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>780</y><w>630</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>610;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>620</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>690</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>650</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>770</y><w>790</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;260;770;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>740</y><w>170</w><h>140</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;120;150;10</additional_attributes></element></diagram>

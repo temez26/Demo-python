@@ -1,4 +1,3 @@
-# Teemu Kalmari Taso 3
 
 # Luokat
 Tieto = auttaa lisäämään käyttäjän nimet kayttaja pöytään perinnän avulla

@@ -1,48 +1,47 @@
+# Classes
+#### Tieto = helps to add user names to the user table using inheritance
+#### Kayttaja = contains functions for creating and modifying the user table
+#### Tavara = contains functions for creating and modifying the item table
+#### kayttajanTavara = contains functions for creating the user_items table and adding items from the user and item tables to it
+#### Otsikko = contains the beginning title and is abstract
+#### Otsikko1 = contains the ending greeting and exhibits Polymorphism
+#### siirto = related to the functionality of Otsikko1
+#### Valikko = here all program menus are linked together and multiple inheritance is used from the Kayttaja, Tavara, kayttajanTavara, and Otsikko classes
+#### Main = contains the main program where multiple inheritance from Valikko and Otsikko1 classes occurs
+# Methods:
+## In the Kayttaja class
+table creates the user table if it does not exist
+haeKanta prints the user table
+salasana displays the user's password
+linkita adds the users and their teams written in the user table
+etsiTiimi finds the team of the written user
+vaihdaTiimi changes the team of the desired user
+poista deletes the desired user
 
-# Luokat
-Tieto = auttaa lisäämään käyttäjän nimet kayttaja pöytään perinnän avulla
-Kayttaja = sisältää funktiot kayttaja pöydän luomiselle ja muokkaamiselle
-Tavara = sisältää funktiot Tavarat pöydän luomiselle ja muokkaamiselle
-kayttajanTavara = sisältää funktiot kayttajan_tavarat pöydän luomiselle ja lisäämisen kayttaja ja Tavara pöydästä itseensä
-Otsikko = sisältää alku otsikon ja on abstracti
-Otsikko1 = sisältää loppu tervehdyksen ja tässä tulee Polymorfismi
-siirto = liittyy Otsikko1 toiminnallisuuteen
-Valikko = Tässä on kaikki ohjelman valikot nidottu yhteeen ja käytössä on monin perintä kayttajanTavara,Tavara,Kayttaja,Otsikko luokista
-Main = tässä on pää ohjelma ja tässäkin tapahtuu monin perintää Valikko ja Otsikko1 luokista
-# Methodit
-## Kayttaja luokkassa.
-taulu luo kayttajat pöydän jos sitä ei ole
-haeKanta tulostaa kayttajat pöydän
-salasana näyttää kayttajan salasanan
-linkita lisää kayttajat pöytään kirjoitetut käyttäjät ja niiden tiimit
-etsiTiimi etsii kirjoitetun käyttäjän tiimin
-vaihdaTiimi vaihtaa halutun käyttäjän tiimin
-poista poistaa halutun käyttäjän
+## In the Tavara class
+tavarat creates the item table if it does not exist
+tavaraLista writes the items according to the instructions in the table
+tavaraTaytto allows the user to change the value of an item
+haeTavarat prints the item table
+poistaTavarat deletes the item table
 
-## Tavara luokkassa.
-tavarat luo tavarat pöydän jos sitä ei ole
-tavaraLista kirjoittaa pöydän sisään ohjeenannon mukaiset tavarat
-tavaraTaytto antaa käyttäjälle vaihto ehdon muuttaa tavaran arvoa
-haeTavarat tulostaa tavarat pöydän
-poistaTavarat poistaa tavarat pöydän
+## In the kayttajanTavara class
+kayttajaTavara creates the user_items table if it does not exist
+lisaaTavara adds the desired item to the desired user
+naytaKayttajanTavara displays the items of the users
+poistaa deletes the user_items table
 
-## KayttajanTavara luokkassa.
-kayttajaTavara luo kayttajan_Tavara pöydän jos sitä ei ole
-lisaaTavara antaa halutulle käyttäjälle halutun tavaran
-naytaKayttajanTavara näyttää käyttäjien tavarat
-poistaa kayttajan_Tavara pöydän
+## In the Otsikko, Otsikko1, and siirto classes
+Used to print the beginning title and ending greetings
+Otsikko is abstract
+Otsikko1 and siirto classes exhibit Polymorphism
 
-## Otsikko,Otsikko1,siirto luokat.
-Toimii alku otsikon ja loppuhyvästien tulostamiseen
-Otsikko on abstracti 
-Otsikko1 ja siirto luokissa toimii Polymorfismi
+## In the Valikko class
+Contains all menu functions with names valikko, valikko2, valikko3, valikko4
+Multiple inheritance from the Kayttaja, Tavara, kayttajanTavara, and Otsikko classes occurs in this class
 
-## Valikko luokkassa.
-Tässä on kaikki valikko funktiot joiden nimet on valikko,valikko2,valikko3,valikko4
-Tässä luokassa toimii monin perintä kayttajanTavara,Tavara,Kayttaja,Otsikko luokista
+There is also a subprogram that creates a connection to sqlite3
 
-sitten on yksi ali ohjelma jossa luodaan yhteys sqlite3
-
-## Main luokkassa.
-Tässä luokassa on ensin haetaan tarpeelliset funktiot jotta luodaan pöydät tarvittaessa jonka jälkeen avataan valikko
-tässä tapahtuu moniperintää valikko ja Otsikko1 luokista
+## In the Main class
+First, necessary functions are called to create tables if needed, and then the menu is opened.
+Multiple inheritance from the Valikko and Otsikko1 classes occurs in this class.

@@ -1,4 +1,4 @@
-# Classes
+# Classes:
 #### Tieto = helps to add user names to the user table using inheritance
 #### Kayttaja = contains functions for creating and modifying the user table
 #### Tavara = contains functions for creating and modifying the item table
@@ -18,30 +18,30 @@ etsiTiimi finds the team of the written user
 vaihdaTiimi changes the team of the desired user
 poista deletes the desired user
 
-## In the Tavara class
+## In the Tavara class:
 tavarat creates the item table if it does not exist
 tavaraLista writes the items according to the instructions in the table
 tavaraTaytto allows the user to change the value of an item
 haeTavarat prints the item table
 poistaTavarat deletes the item table
 
-## In the kayttajanTavara class
+## In the kayttajanTavara class:
 kayttajaTavara creates the user_items table if it does not exist
 lisaaTavara adds the desired item to the desired user
 naytaKayttajanTavara displays the items of the users
 poistaa deletes the user_items table
 
-## In the Otsikko, Otsikko1, and siirto classes
+## In the Otsikko, Otsikko1, and siirto classes:
 Used to print the beginning title and ending greetings
 Otsikko is abstract
 Otsikko1 and siirto classes exhibit Polymorphism
 
-## In the Valikko class
+## In the Valikko class:
 Contains all menu functions with names valikko, valikko2, valikko3, valikko4
 Multiple inheritance from the Kayttaja, Tavara, kayttajanTavara, and Otsikko classes occurs in this class
 
-There is also a subprogram that creates a connection to sqlite3
+There is also a subprogram that creates a connection to sqlite3.
 
-## In the Main class
+## In the Main class:
 First, necessary functions are called to create tables if needed, and then the menu is opened.
 Multiple inheritance from the Valikko and Otsikko1 classes occurs in this class.
